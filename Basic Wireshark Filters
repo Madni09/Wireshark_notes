@@ -1,0 +1,16 @@
+Wireshark Notes - Madni 
+
+> FILTER FOR PROTOCOLS: You can just write down the protocol name in the search bar. You can enter the following protocol names to search them.
+- DNS  - HTTP - FTP - SSH - ARP - TELNET - ICMP
+
+> FILTER FOR IP ADDRESS: By entering this command, we can find details about specific IP addresses.
+- ip.addr == 0.0.0.0 (Example ip address)
+- ip.src == 0.0.0.0 (It will list the Source IP address given in the argument.)
+- ip.dst == 0.0.0.0 (It will find out destination packet going to 0.0.0.0)
+
+> FILTER BY MAC ADDRESS: 
+- eth.addr == 01:23:45:67:89:AB (It will filter out all logs related to 01:23:45:67:89:AB)
+
+> FILTER BY PORT NUMBER:
+- udp.port == 53
+- tcp.port == 25
